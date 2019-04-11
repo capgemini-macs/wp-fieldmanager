@@ -1,1 +1,1 @@
-# 2817-cg-fieldmanager-plugin
+# WP Plugin for custom FieldManager field types
