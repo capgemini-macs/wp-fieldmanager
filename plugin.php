@@ -25,3 +25,8 @@ require_once __DIR__ . '/inc/map/class-fieldmanager-map.php';
  * Time field
  */
 require_once __DIR__ . '/inc/time/class-fieldmanager-time.php';
+
+/**
+ * Datepicker Time Opt field
+ */
+require_once __DIR__ . '/inc//datepicker_time_opt/class-fieldmanager-datepicker-time-opt.php';
