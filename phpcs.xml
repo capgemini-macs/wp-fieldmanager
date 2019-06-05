@@ -4,6 +4,7 @@
 	<!-- Ignore minified files -->
 	<exclude-pattern>*.min.js</exclude-pattern>
 	<exclude-pattern>*.min.css</exclude-pattern>
+	<exclude-pattern>*/wp-tests/*</exclude-pattern>
 
 	<!-- Scanning preferences -->
 	<arg value="sp"/> <!-- Show sniff and progress -->
