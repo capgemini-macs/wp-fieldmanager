@@ -1,8 +1,9 @@
 <?php
-
 /**
  * Fieldmanager Google Map field.
  */
+namespace CG\Fieldmanager;
+
 class Fieldmanager_Map extends Fieldmanager_Field {
 
 	/**
@@ -34,9 +35,12 @@ class Fieldmanager_Map extends Fieldmanager_Field {
 			return;
 		}
 
-		$maps_js_url = add_query_arg( [
-			'key' => rawurlencode( $this->api_key ),
-		], $maps_js_url );
+		$maps_js_url = add_query_arg(
+			[
+				'key' => rawurlencode( $this->api_key ),
+			],
+			$maps_js_url 
+		);
 
 		// Scripts & styles
 		wp_register_script( 'fm-google-maps', $maps_js_url, [], null, false );
@@ -88,11 +92,13 @@ class Fieldmanager_Map extends Fieldmanager_Field {
 
 		foreach ( $this->validate as $func ) {
 			if ( ! call_user_func( $func, $value ) ) {
-				$this->_failed_validation( sprintf(
-					__( 'Input "%1$s" is not valid for field "%2$s" ', 'fieldmanager' ),
-					(string) $value,
-					$this->label
-				) );
+				$this->_failed_validation(
+					sprintf(
+						__( 'Input "%1$s" is not valid for field "%2$s" ', 'fieldmanager' ),
+						(string) $value,
+						$this->label
+					) 
+				);
 			}
 		}
 
