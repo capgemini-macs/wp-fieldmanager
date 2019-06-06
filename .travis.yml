@@ -33,4 +33,4 @@ script:
   # run phpcs
   - $PHPCS_DIR/bin/phpcs -n -s --standard=./phpcs.xml .
   # check if plugin don't crash WP
-  - cd wp-tests/spec && bundle exec rspec test.rb
+  # - cd wp-tests/spec && bundle exec rspec test.rb
