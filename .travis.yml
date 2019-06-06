@@ -15,6 +15,7 @@ env:
 before_script:
   - git clone https://github.com/Seravo/wordpress-test-template wp-tests
   - bash wp-tests/bin/install-wp-tests.sh test root '' localhost $WP_VERSION
+  - git clone https://github.com/alleyinteractive/wordpress-fieldmanager /tmp/wordpress/wp-content/plugins/fieldmanager
   # install phpcs
   - git clone -b master --depth 1 https://github.com/squizlabs/PHP_CodeSniffer.git $PHPCS_DIR
   # install standards
