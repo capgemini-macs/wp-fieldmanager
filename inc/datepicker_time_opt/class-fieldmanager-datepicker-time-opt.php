@@ -8,6 +8,7 @@
  * This field returns array with timestamp and additional key [has_time] with boolean value
  * that keeps info on whether the time field was actually filled.
  */
+namespace CG\Fieldmanager;
 
 /**
  * A JavaScript date-picker which submits dates as Unix timestamps with optional time field.
@@ -42,9 +43,7 @@ class Fieldmanager_Datepicker_Time_Opt extends Fieldmanager_Datepicker {
 		// If we're storing the local time, in order to make the form work as expected, we have
 		// to alter the timestamp. This isn't ideal, but there currently isn't a good way around
 		// it in WordPress.
-		if ( $this->store_local_time ) {
-			$value['date'] += get_option( 'gmt_offset' ) * HOUR_IN_SECONDS;
-		}
+
 		ob_start();
 		include 'template-datepicker-time-opt.php';
 

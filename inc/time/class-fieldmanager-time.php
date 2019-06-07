@@ -50,7 +50,7 @@ class CG_FM_Time_Field extends Fieldmanager_Field {
 	 * @return string HTML for the element.
 	 */
 	public function form_element( $value ) {
-		$value = absint( $value );
+		$value     = absint( $value );
 		$old_value = $value;
 		// If we're storing the local time, in order to make the form work as expected, we have
 		// to alter the timestamp. This isn't ideal, but there currently isn't a good way around
@@ -86,7 +86,7 @@ class CG_FM_Time_Field extends Fieldmanager_Field {
 	public function presave( $value, $current_value = array() ) {
 		$time_to_parse = '';
 		if ( ! empty( $value['hour'] ) && is_numeric( $value['hour'] ) ) {
-			$hour = intval( $value['hour'] );
+			$hour   = intval( $value['hour'] );
 			$minute = ( isset( $value['minute'] ) && is_numeric( $value['minute'] ) ) ? intval( $value['minute'] ) : 0;
 			if ( 0 === $hour && $this->use_am_pm ) {
 				$hour = 12;
