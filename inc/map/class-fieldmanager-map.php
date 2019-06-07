@@ -4,7 +4,7 @@
  */
 namespace CG\Fieldmanager;
 
-class Fieldmanager_Map extends Fieldmanager_Field {
+class Fieldmanager_Map extends \Fieldmanager_Field {
 
 	/**
 	 * Specific to CapGemini.

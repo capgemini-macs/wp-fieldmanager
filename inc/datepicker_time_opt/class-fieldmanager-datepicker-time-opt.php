@@ -13,7 +13,7 @@ namespace CG\Fieldmanager;
 /**
  * A JavaScript date-picker which submits dates as Unix timestamps with optional time field.
  */
-class Fieldmanager_Datepicker_Time_Opt extends Fieldmanager_Datepicker {
+class Fieldmanager_Datepicker_Time_Opt extends \Fieldmanager_Datepicker {
 
 	/**
 	 * Collect time info or just date info? Defaults to just date info.
