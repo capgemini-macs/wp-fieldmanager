@@ -29,4 +29,9 @@ require_once __DIR__ . '/inc/time/class-fieldmanager-time.php';
 /**
  * Datepicker Time Opt field
  */
-require_once __DIR__ . '/inc//datepicker_time_opt/class-fieldmanager-datepicker-time-opt.php';
+require_once __DIR__ . '/inc/datepicker_time_opt/class-fieldmanager-datepicker-time-opt.php';
+
+/**
+ * Comma separated field
+ */
+require_once __DIR__ . '/inc/comma-separated/class-fieldmanager-comma-separated.php';
