@@ -1,10 +1,9 @@
 <?php
+
 /**
  * Fieldmanager Google Map field.
  */
-namespace CG\Fieldmanager;
-
-class Fieldmanager_Map extends \Fieldmanager_Field {
+class Fieldmanager_Map extends Fieldmanager_Field {
 
 	/**
 	 * Specific to CapGemini.
@@ -39,11 +38,11 @@ class Fieldmanager_Map extends \Fieldmanager_Field {
 			[
 				'key' => rawurlencode( $this->api_key ),
 			],
-			$maps_js_url 
+			$maps_js_url
 		);
 
 		// Scripts & styles
-		wp_register_script( 'fm-google-maps', $maps_js_url, [], true, false );
+		wp_register_script( 'fm-google-maps', $maps_js_url, [], null, false );
 		fm_add_script( 'fieldmanager_map', 'fieldmanager-map.js', [ 'jquery', 'fm-google-maps', 'fieldmanager_script' ], '0.0.1', false, '', [], plugins_url( '/', __FILE__ ) );
 	}
 
@@ -94,11 +93,10 @@ class Fieldmanager_Map extends \Fieldmanager_Field {
 			if ( ! call_user_func( $func, $value ) ) {
 				$this->_failed_validation(
 					sprintf(
-						/* translators: number of input */
 						__( 'Input "%1$s" is not valid for field "%2$s" ', 'fieldmanager' ),
 						(string) $value,
 						$this->label
-					) 
+					)
 				);
 			}
 		}
