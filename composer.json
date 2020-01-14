@@ -1,5 +1,5 @@
 {
-	"name": "capgemini-macs/fieldmanager",
+	"name": "capgemini-macs/cg-fieldmanager",
 	"description": "Custom fieldmanager field types",
 	"homepage": "https://github.com/capgemini-macs/wp-fieldmanager",
 	"keywords": [
@@ -11,6 +11,10 @@
 			"name":"Human Made",
 			"email":"support@humanmade.co.uk",
 			"homepage":"http://hmn.md"
+		},
+		{
+			"name":"Capgemini MACS PL",
+			"homepage":"https://capgemini.com"
 		}
 	],
 	"support"    : {
