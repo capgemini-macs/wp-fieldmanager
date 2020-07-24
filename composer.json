@@ -1,7 +1,7 @@
 {
-	"name": "capgemini-macs/fieldmanager",
+	"name": "capgemini-macs/fieldmanager-fields",
 	"description": "Custom fieldmanager field types",
-	"homepage": "https://github.com/capgemini-macs/wp-fieldmanager",
+	"homepage": "https://github.com/capgemini-macs/wp-fieldmanager-fields",
 	"keywords": [
 		"wordpress"
 	],
@@ -11,11 +11,16 @@
 			"name":"Human Made",
 			"email":"support@humanmade.co.uk",
 			"homepage":"http://hmn.md"
+		},
+		{
+			"name":"Capgemini MACS PL",
+			"email":"edge-support.global@capgemini.com",
+			"homepage":"https://capgemini.com"
 		}
 	],
 	"support"    : {
-        "issues": "https://github.com/capgemini-macs/wp-fieldmanager/issues",
-        "source": "https://github.com/capgemini-macs/wp-fieldmanager"
+        "issues": "https://github.com/capgemini-macs/wp-fieldmanager-fields/issues",
+        "source": "https://github.com/capgemini-macs/wp-fieldmanager-fields"
 	},
 	"type": "wordpress-plugin",
 	"require": {
