@@ -1,14 +1,14 @@
 <?php
 /**
- * Plugin Name: CapGemini Fieldmanager Fields
+ * Plugin Name: MACS Fieldmanager Fields
  * Description: Custom fieldmanager field types.
- * Plugin URI: https://hmn.md
- * Author: Human Made
- * Author URI: https://hmn.md
+ * Plugin URI: https://capgemini.com
+ * Author: Capgemini MACS PL
+ * Author URI: https://capgemini.com
  * License: GPLv2
  *
- * @package CapGemini
  * @author  Rob O'Rourke <rob@hmn.md>
+ * @author  Lech Dulian <lech.dulian@capgemini.com>
  */
 
 /**
